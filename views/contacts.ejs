@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Contacts</h1>
+
+        
+        <div style="display:flex;flex-wrap:wrap;">
+                <% for(let i = 0; i < contacts.length; i++){ %>
+            <div class="card rounded" style="width: 18rem;margin:.5em;">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                            <%= contacts[i].firstName %> <%= contacts[i].lastName %>
+                    </h5>
+
+                    <p class="card-text">
+                            <%= contacts[i].firstName %> is a <%= contacts[i].occupation %>.
+                    </p>
+                    <address>
+                        <%= contacts[i].city %>, <%= contacts[i].state %>
+                    </address>
+                </div>
+            </div>
+<% } %>
+            <!--
+            <div class="card rounded" style="width: 18rem;margin:.5em;">
+                <div class="card-body">
+                    <h5 class="card-title">Andrew Ott</h5>
+                    <p class="card-text">Andrew is a bootcamp instructor.</p>
+                    <address>
+                        Somerville, MA
+                    </address>
+                </div>
+            </div>
+            <div class="card rounded" style="width: 18rem;margin:.5em;">
+                <div class="card-body">
+                    <h5 class="card-title">Kyrie Iriving</h5>
+                    <p class="card-text">Kyrie is a professional basketball player.</p>
+                    <address>
+                        Boston, MA
+                    </address>
+                </div>
+            </div>-->
+        </div> 
+    </body>
+</html>
